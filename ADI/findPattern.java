@@ -6,15 +6,19 @@ public class findPattern {
         int sL = str.length();
         int pL = patt.length();
 
+        ArrayList<Integer> list = new ArrayList<>();
         for(int i = 0 ; i<=(sL-pL);i++)
         {
             String sub = str.substring(i,i+pL);
 
             if(patt.equals(sub))
             {
-                System.out.println(i);
+                // System.out.println(i);
+                list.add(i);
             }
         }
+
+        System.out.println(list);
     }
 
 
@@ -43,8 +47,8 @@ public class findPattern {
         String patt = sc.nextLine();
 
         find1(str, patt);
-        System.out.println(" code by index");
-        find1(str, patt);
+        // System.out.println(" code by index");
+        // find1(str, patt);
     }
     // AABAACAADAABAAABAA
     

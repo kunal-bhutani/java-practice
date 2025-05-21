@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class primeFactor {
+public class prime {
 
     // last chocolate at which position in circle
 
@@ -14,7 +14,7 @@ public class primeFactor {
         return position;
     }
     // finding the lcm 
-    public static void prime(int n )
+    public static void primeFactor(int n )
     {
         int p = 2;
         while (n>0 && p<=n)
@@ -50,7 +50,7 @@ public class primeFactor {
         Scanner sc = new Scanner (System.in);
         System.out.println("enter the number ->");
         // int n = sc.nextInt();
-        // prime(n);
+        // primeFactor(n);
         
         int a = sc.nextInt();
         int b = sc.nextInt();
